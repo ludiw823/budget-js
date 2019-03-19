@@ -142,10 +142,10 @@ var UIController = (function(){
 			//create HTML string with placeholder text
 			if (type === 'inc'){
 				element = DOMstrings.incomeContainer;
-				html = '<div class="item clearfix"><div class="item__description">%description%</div><div class="right clearfix"><div class="item__value">%value%</div><div class="item__delete"><button class="item__delete--btn"><i class="ion-ios-close-outline" id="inc-%id%"></i></button></div></div></div>';
+				html = '<div class="item clearfix"><div class="item__description">%description%</div><div class="right clearfix"><div class="item__value">%value%</div><div class="item__delete"><button class="item__delete--btn"><img src="img/inc-delete.png" id="inc-%id%"></i></button></div></div></div>';
 			} else if (type === 'exp'){
 				element = DOMstrings.expensesContainer;
-				html = '<div class="item clearfix"><div  class="item__description">%description%</div><div class="right clearfix"><div class="item__value">%value%</div><div class="item__percentage">%</div><div class="item__delete"><button class="item__delete--btn"><i class="ion-ios-close-outline" id="exp-%id%"></i></button></div></div></div>';
+				html = '<div class="item clearfix"><div  class="item__description">%description%</div><div class="right clearfix"><div class="item__value">%value%</div><div class="item__percentage">%</div><div class="item__delete"><button class="item__delete--btn"><img src="img/exp-delete.png" id="exp-%id%"></i></button></div></div></div>';
 			}
 			//replace placeholder text with user's input
 			newHtml = html.replace('%id%', obj.id);

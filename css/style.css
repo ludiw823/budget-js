@@ -155,6 +155,7 @@ body {
 .add__btn {
     font-size: 35px;
     background: none;
+    /*background-image: url("../img/ok.png");*/
     border: none;
     color: #28B9B5;
     cursor: pointer;
@@ -162,6 +163,12 @@ body {
     vertical-align: middle;
     line-height: 1.1;
     margin-left: 10px;
+}
+
+.add__btn img{
+    display:block;
+    height:28px;
+    width:28px;
 }
 
 .add__btn:active { transform: translateY(2px); }
@@ -235,11 +242,21 @@ h2 {
 .income .item__delete--btn {
     color: #28B9B5;
 }
+.income img{
+    display: block;
+    height: 23px;
+    width: 23px;
+}
 
 .expenses .item__value,
 .expenses .item__percentage,
 .expenses .item__delete--btn {
     color: #FF5049;
+}
+.expenses img{
+    display: block;
+    height: 23px;
+    width: 23px;
 }
 
 
